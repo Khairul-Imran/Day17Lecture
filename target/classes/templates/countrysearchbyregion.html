@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Search For Country By Region</h1>
+        <form method="POST" th:action="@{/process/searchCountryByRegion}">
+            <div class="mb-3">
+                <label for="searchRegion" class="form-label">Search By Region:</label>
+                <!-- <select name="searchRegion" id="searchRegion">
+                    <option value="Africa">Africa</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Antarctic">Antarctic</option>
+                    <option value="Central America">Central America</option>
+                </select> -->
+
+                <select name="searchRegion" id="searchRegion">
+                    <option data-th-each="region : ${regions}" data-th-value="${region}" data-th-text="${region}"></option>
+
+                </select>
+
+            </div>
+            <div class="mb-3">
+                <button type="submit">Submit</button>
+            </div>
+            <!-- Added the bootstrap here -->
+
+        </form>
+
+    </div>
+</body>
+</html>

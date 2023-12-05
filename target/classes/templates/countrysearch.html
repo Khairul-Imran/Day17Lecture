@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Search For Country</h1>
+        <form method="POST" th:action="@{/process/searchCountry}">
+            <div class="mb-3">
+                <label for="searchName" class="form-label">Search By Name:</label>
+                <input type="text" name="searchName" class="form-control" placeholder="Country Name or Region">
+            </div>
+            <div class="mb-3">
+                <button type="submit">Submit</button>
+            </div>
+            <!-- Added the bootstrap here -->
+
+        </form>
+
+    </div>
+</body>
+</html>

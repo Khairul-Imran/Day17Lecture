@@ -4,8 +4,12 @@ Flow
 2. Repository -> Each model will have a repo. Deals with reading and writing to your DB (redis).
 3. Service -> Commonly communicates with the repo classes. (known as the logic layer)
 4. Controller -> commonly uses the service methods.
+-> Good to separate your controllers -> UI Controllers and Process Controllers.*****
 
 What is json-p for?
+
+maven jackson xml to convert to xml (not important)
+
 
 --------------------------------------------------------Lecture Practice--------------------------------------------------------
 - Generated the spring project
@@ -13,12 +17,27 @@ What is json-p for?
 - Added extra dependencies ()
 - He also added a Config Folder.
 
+- He created the Model first
+- Then the booksearch view + HomeController
+- Process Controller
+(make sure to test)
+- ProcessService class -> He transferred the code from the process controller to the service class. (makes more sense to be there)
+- 
 
+- After lunch...
+- Worked on listcountry2
+- then added countrysearchform.
+- Then added the countrysearchbyregion form (hard coded and stored the regions)
 
+- Docker and deploy
 
 --------------------------------------------------------Todo--------------------------------------------------------
 - Attempt workshop
+- Figure out why my project doesn't auto generate a gitignore file.
+- Code with ***** are syntax with new concepts.
+- Deploy to railway.
 
 
 --------------------------------------------------------Assessment--------------------------------------------------------
 - He might give the template project folder for assessment.
+- must know how to read a string of json files, to cast it into a json object.....

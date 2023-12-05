@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Countries</h1>
+        <table>
+            <thead>
+                <tr>Country Code</tr>
+                <tr>Country Name</tr>
+            </thead>
+            <!-- whatever is in the curly brace has to be the same as the name you used to inject into the model -->
+            <tbody>
+                <tr data-th-each="country : ${countries}"> 
+                    <!-- code and name must be the same as the names you used in the object class' properties. Double check if supposed to use $ or * -->
+                    <td data-th-text="*{country.code}"></td> 
+                    <td data-th-text="*{country.name}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
