@@ -1,0 +1,24 @@
+- He revised the concepts.
+Flow
+1. Start with Model (try not to use Lombok)
+2. Repository -> Each model will have a repo. Deals with reading and writing to your DB (redis).
+3. Service -> Commonly communicates with the repo classes. (known as the logic layer)
+4. Controller -> commonly uses the service methods.
+
+What is json-p for?
+
+--------------------------------------------------------Lecture Practice--------------------------------------------------------
+- Generated the spring project
+- Selected the basic dependencies
+- Added extra dependencies ()
+- He also added a Config Folder.
+
+
+
+
+--------------------------------------------------------Todo--------------------------------------------------------
+- Attempt workshop
+
+
+--------------------------------------------------------Assessment--------------------------------------------------------
+- He might give the template project folder for assessment.
